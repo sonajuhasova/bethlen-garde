@@ -1,0 +1,202 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+video,
+frame {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Home --------------------------------------*/
+#home {
+    width: 100vw;
+    height: 100vh;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#home div {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+#home div h1 {
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    margin: 60px auto auto auto;
+    font-family: 'Average',
+        serif;
+    font-weight: 300;
+}
+
+#home div img {
+    width: 50px;
+    justify-self: flex-end;
+    margin: auto auto 50px auto;
+
+}
+
+@media only screen and (min-width: 768px) {
+    #home div h1 {
+        text-align: left;
+        margin: 40vh auto auto 60px;
+        justify-self: flex-end;
+        font-size: 120px;
+
+    }
+
+    #home div img {
+        width: 55px;
+        margin: -50px auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #home div h1 {
+        margin: 45vh auto auto 100px;
+        font-size: 120px;
+
+    }
+
+    #home div img {
+        width: 60px;
+    }
+}
+
+
+/*About Us --------------------------------------*/
+#about {
+    width: 100vw;
+    height: auto;
+}
+
+#about h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    font-family: 'Average',
+        serif;
+    font-weight: 300;
+}
+
+#about p {
+    font-size: 20px;
+    font-family: 'EB Garamond',
+        serif;
+    line-height: 30px;
+    margin: 30px auto;
+    text-align: center;
+    width: 85vw;
+
+}
+
+@media only screen and (min-width: 768px) {
+    #about h2 {
+        font-size: 60px;
+        margin: 45px auto 0 auto;
+
+    }
+
+    #about p {
+        width: 80vw;
+        margin: 45px auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #about h2 {
+        font-size: 70px;
+        margin: 60px auto 0 auto;
+
+    }
+
+    #about p {
+        font-size: 23px;
+        line-height: 35px;
+        width: 60vw;
+        margin: 60px auto;
+    }
+}
+
+
+/*Events --------------------------------------*/
+#events {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../media/intro.jpg);
+    object-fit: cover;
+    background-position: center;
+clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+@media only screen and (min-width: 768px) {
+    #events {
+        clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    
+    #events h2 {
+        font-size: 60px;
+        margin: 45px auto 0 auto;
+
+    }
+
+    #events p {
+        width: 80vw;
+        margin: 45px auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+   #events {
+       clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+   }
+
+ #events h2 {
+        font-size: 70px;
+        margin: 60px auto 0 auto;
+
+    }
+
+    #events p {
+        font-size: 23px;
+        line-height: 35px;
+        width: 60vw;
+        margin: 60px auto;
+    }
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
