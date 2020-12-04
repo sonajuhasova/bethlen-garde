@@ -8,10 +8,12 @@
     <meta name="description" content="Historical reenactment group">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="icon" type="image/x-icon" href="" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
             </video>
             <div>
                 <h1>Bethlen <br> Garde</h1>
-                <img src="media/arrow.png" alt="arrow icon">
+                <a href="#about"> <img src="media/arrow.png" alt="arrow icon"></a>
             </div>
         </section>
 
@@ -56,29 +58,28 @@
         <section id="gallery">
             <h2>Gallery</h2>
             <div id="gallery-container">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
-                <img src="media/intro.jpg" alt="">
+                <a href="media/intro.jpg" data-lightbox="mygallery" data-title="dsad"><img src="media/intro.jpg" alt="">
+                </a>
+                <a href="media/intro.jpg" data-lightbox="mygallery" data-title="dsad"><img src="media/intro.jpg" alt="">
+                </a>
+                <a href="media/intro.jpg" data-lightbox="mygallery" data-title="dsad"><img src="media/intro.jpg" alt="">
+                </a>
+                <a href="media/intro.jpg" data-lightbox="mygallery" data-title="dsad"><img src="media/intro.jpg" alt="">
+                </a>
             </div>
         </section>
 
         <!--Contact-->
-        <section id="contact"></section>
+        <section id="contact">
+            <h2>Contact</h2>
+        </section>
     </main>
 
     <footer></footer>
 
 
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
 </body>
 
 </html>

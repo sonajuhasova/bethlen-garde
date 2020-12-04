@@ -13,6 +13,11 @@ frame {
     height: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     overflow-x: hidden;
 }
@@ -101,11 +106,22 @@ video {
     font-weight: 300;
 }
 
-#home div img {
+#home div a {
     width: 50px;
     justify-self: flex-end;
     margin: auto auto 50px auto;
 
+}
+
+#home div img {
+    width: 50px;
+    height: auto;
+
+}
+
+#home div img:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
 }
 
 @media only screen and (min-width: 768px) {
@@ -207,18 +223,20 @@ video {
 
 }
 
-#gallery-container img { 
+#gallery-container img {
     width: 42.5vw;
     height: 42.5vw;
     object-fit: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
 }
 
-#gallery-container img:hover{
-    transform: scale(1.05);
+#gallery-container img:hover {
+    transform: scale(1.03); 
     cursor: pointer;
 }
+
 @media only screen and (min-width: 768px) {
-    #gallery-container { 
+    #gallery-container {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 3vw;
         margin: 70px auto;
@@ -245,6 +263,12 @@ video {
 
     #gallery-container img {
         width: calc(66vw / 4);
-        height: calc(66vw / 4); 
+        height: calc(66vw / 4);
     }
+}
+
+/*Contact --------------------------------------*/
+#contact {
+    width: 100vw;
+    height: auto;
 }
