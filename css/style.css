@@ -13,6 +13,60 @@ frame {
     height: auto;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+/*Fonts --------------------------------------*/
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    font-family: 'Average',
+        serif;
+    font-weight: 300;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'EB Garamond',
+        serif;
+    line-height: 30px;
+    margin: 30px auto;
+    text-align: center;
+    width: 85vw;
+
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 50px;
+        margin: 45px auto 0 auto;
+
+    }
+
+    p {
+        width: 80vw;
+        margin: 45px auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h2 {
+        font-size: 50px;
+        margin: 50px auto 0 auto;
+
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+        width: 50vw;
+        margin: 50px auto;
+    }
+}
+
 /*Home --------------------------------------*/
 #home {
     width: 100vw;
@@ -88,63 +142,35 @@ video {
     height: auto;
 }
 
-#about h2 {
-    font-size: 50px;
-    text-align: center;
-    margin: 30px auto 0 auto;
-    font-family: 'Average',
-        serif;
-    font-weight: 300;
-}
-
-#about p {
-    font-size: 20px;
-    font-family: 'EB Garamond',
-        serif;
-    line-height: 30px;
-    margin: 30px auto;
-    text-align: center;
-    width: 85vw;
-
-}
-
-@media only screen and (min-width: 768px) {
-    #about h2 {
-        font-size: 60px;
-        margin: 45px auto 0 auto;
-
-    }
-
-    #about p {
-        width: 80vw;
-        margin: 45px auto;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    #about h2 {
-        font-size: 70px;
-        margin: 60px auto 0 auto;
-
-    }
-
-    #about p {
-        font-size: 23px;
-        line-height: 35px;
-        width: 60vw;
-        margin: 60px auto;
-    }
-}
 
 
 /*Events --------------------------------------*/
 #events {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-image: url(../media/intro.jpg);
     object-fit: cover;
     background-position: center;
-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+}
+
+#events div {
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+#events div h2 {
+    color: white;
+}
+
+#events div p {
+    color: white;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -152,51 +178,73 @@ clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
         clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
 
-    
-    #events h2 {
-        font-size: 60px;
-        margin: 45px auto 0 auto;
+    #events div {
+        padding-top: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    #events {
+        clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+
+}
+
+/*Gallery --------------------------------------*/
+#gallery {
+    width: 100vw;
+    height: auto;
+}
+
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5vw;
+    margin: 30px 5vw;
+
+
+}
+
+#gallery-container img { 
+    width: 42.5vw;
+    height: 42.5vw;
+    object-fit: cover;
+}
+
+#gallery-container img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+    #gallery-container { 
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3vw;
+        margin: 70px auto;
+        width: 80vw;
+
 
     }
 
-    #events p {
-        width: 80vw;
-        margin: 45px auto;
+    #gallery-container img {
+        width: calc(74vw / 3);
+        height: calc(74vw / 3);
     }
 }
 
 @media only screen and (min-width: 1200px) {
-   #events {
-       clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
-   }
+    #gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2vw;
+        margin: 100px auto;
+        width: 70vw;
 
- #events h2 {
-        font-size: 70px;
-        margin: 60px auto 0 auto;
 
     }
 
-    #events p {
-        font-size: 23px;
-        line-height: 35px;
-        width: 60vw;
-        margin: 60px auto;
+    #gallery-container img {
+        width: calc(66vw / 4);
+        height: calc(66vw / 4); 
     }
 }
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
