@@ -267,6 +267,17 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-size: 20px;
+    font-family: 'EB Garamond',
+        serif;
+    line-height: 30px;
+    margin: 30px auto;
+    text-align: center;
+    width: 85vw;
+    font-weight: bold;
+}
+
 p {
     font-size: 20px;
     font-family: 'EB Garamond',
@@ -505,4 +516,71 @@ video {
 #contact {
     width: 100vw;
     height: auto;
+    background-image: url(../media/contact3.jpg);
+    object-fit: cover;
+    background-position: top;
+
+}
+
+#contact div {
+    width: 100vw;
+    height: 100vh;
+   background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact div h2 {
+    color: white;
+}
+
+#contact div h3 {
+    color: white;
+    margin: 50px auto 0 auto;
+}
+
+#contact div p {
+    color: white;
+    margin: 0 auto;
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    #contact {
+        height: 150vh;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    #contact div {
+        height: 120vh;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #contact {
+        height: 250vh;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    #contact div {
+        height: 150vh;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 60%, rgba(255, 255, 255, 0) 100%);
+
+    }
+
+    #contact div p {
+        width: 20vw;
+
+
+    }
+
 }
