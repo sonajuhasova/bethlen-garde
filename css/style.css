@@ -262,9 +262,12 @@ h2 {
     font-size: 50px;
     text-align: center;
     margin: 30px auto 0 auto;
-    font-family: 'Average',
-        serif;
+    /*font-family: 'Average',
+        serif;*/
+    font-family: 'IM Fell DW Pica',
+    serif;
     font-weight: 300;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 h3 {
@@ -343,12 +346,15 @@ video {
 
 #home div h1 {
     font-size: 80px;
+    line-height: 130px;
     text-align: center;
     color: white;
     margin: 60px auto auto auto;
-    font-family: 'Average',
-        serif;
+    /*font-family: 'Average',
+        serif;*/
+        font-family: 'IM Fell DW Pica', serif;
     font-weight: 300;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #home div a {
