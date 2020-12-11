@@ -63,12 +63,12 @@
 
         <!--Events-->
         <section id="events">
-            <div>
+            <div id="events-wrapper">
                 <h2>Events</h2>
-                <p>fdsfds <br>fdsd<br><br>
-                    fdsfds <br>fdsd<br><br>
-                    fdsfds <br>fdsd<br><br></p>
-                fdsfds <br>fdsd<br><br>
+                <div id="events-container">
+                    <!--events from firebase-->
+                </div>
+
             </div>
         </section>
 
@@ -77,7 +77,7 @@
             <h2>Gallery</h2>
             <!--code source for popup gallery: https://lokeshdhakar.com/projects/lightbox2/-->
             <div id="gallery-container">
-
+                <!--photos from firebase-->
             </div>
         </section>
 
@@ -114,10 +114,11 @@
     <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="js/mobile-navigation.js"></script>
     <script type="text/javascript" src="js/ls-navigation.js"></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-<!-- Firebase Firestore (database) JS SDK -->
-<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <!-- The core Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <!-- Firebase Firestore (database) JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script type="text/javascript" src="js/firebase-setup.js"></script>
 
 </body>
 

@@ -19,4 +19,4 @@ menuLinks.forEach(
   function(menuLink) { 
     menuLink.addEventListener("click", toggleHamburger) 
   }
-)
+)   
