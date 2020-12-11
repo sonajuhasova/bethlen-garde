@@ -551,7 +551,8 @@ video {
     background-color: rgba(0, 0, 0, 0.7);
     background-size: cover;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    padding-bottom: 50px;
 }
 
 #contact div h2 {
