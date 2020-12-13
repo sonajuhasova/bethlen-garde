@@ -267,6 +267,7 @@ h2 {
         serif;
     font-weight: 300;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    color: #1C2427;
 }
 
 h3 {
@@ -278,6 +279,7 @@ h3 {
     text-align: center;
     width: 85vw;
     font-weight: bold;
+    color: #1C2427;
 }
 
 p {
@@ -288,7 +290,7 @@ p {
     margin: 30px auto;
     text-align: center;
     width: 85vw;
-
+    color: #1C2427;
 }
 
 @media only screen and (min-width: 768px) {
